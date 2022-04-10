@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.carousalcaption{
+    font-size: 100px;
+}
+.container h1{
+    text-align: center;
+    font-weight: bold;
+} 
+.container h5{
+    text-align: center;
+    font-weight: bold;
+}
+.container p{
+    text-align: center;
+    font-size: large;
+    color: rgba(0,0,0,0.8);
+}
+.container #videosubtitle{
+    letter-spacing: 6px;
+    text-align: center;
+}
+.container #videosubtitle2{
+    text-align: center;
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+#experience h2{
+    letter-spacing: 6px;
+    
+    font-weight: bold;
+}
+/* #experience img{ */
+    /* margin-left: 15%; */
+/* } */
+#experience p{
+    
+    text-align: justify;
+    color: rgba(0,0,0,0.8);
+    font-style: italic;
+    font-weight: bold;
+}
+#experience h4{
+    
+    text-align: justify;
+    color: rgba(0,0,0,0.8);
+    font-style: italic;
+    font-weight: bold;
+}
+#caravan p{
+    
+    text-align: justify;
+    color: rgba(0,0,0,0.8);
+    font-style: italic;
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    
+}
+h6{
+    text-align: justify;
+    
+}
+p{
+    line-height: 25px;
+    text-align : justify;
+}
+.card {
+    
+    background-color: green;
+    
+}
+container p{
+    text-align : justify;
+    }
+
+
