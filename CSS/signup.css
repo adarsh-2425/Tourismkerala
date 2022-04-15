@@ -75,7 +75,12 @@
 .form-control.poor input{
 	border-color: red;
 }
-
+.form-control.strong small{
+	color: #2ecc71;
+}
+.form-control.medium small{
+	color: orange;
+}
 
 
 .form-control small {
