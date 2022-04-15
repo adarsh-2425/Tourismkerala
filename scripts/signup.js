@@ -45,7 +45,7 @@ function checkInputs() {
 		setErrorFor(phonenumber, 'Phone Number cannot be blank');
 		return false;
 	}else if (!isPhonenumber(phonenumberValue)) {
-		setErrorFor(phonenumber, 'Not a valid Phonenumber');
+		setErrorFor(phonenumber, 'Please enter 10 digit number');
 		return false;
 	}
 	 else {
@@ -56,7 +56,7 @@ function checkInputs() {
 		setErrorFor(password, 'Password cannot be blank');
 		return false;
 	}else if (!isPassword(passwordValue)) {
-		setErrorFor(password, 'Not a valid password');
+		setErrorFor(password, 'Password must contain Minimum 8 characters, at least one uppercase, one lower case, and one number');
 		return false;
 	}
 	 else if(ispstrong(passwordValue)) {
@@ -71,8 +71,9 @@ function checkInputs() {
 		setPoorFor(password,'Poor');
 	}
 	
+	
 	if(password2Value === '') {
-		setErrorFor(password2, 'Password2 cannot be blank');
+		setErrorFor(password2, 'Please enter the password again');
 		return false;
 	} else if(passwordValue !== password2Value) {
 		setErrorFor(password2, 'Passwords does not match');
@@ -126,12 +127,13 @@ function isPhonenumber(phonenumber){
     return /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(phonenumber);
 }
 function isPassword(password){
-	return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/.test(password);
+	return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(password);
 }
 function ispstrong(password){
-	return /^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$/.test(password);
+	return /^((?=.*[a-z])(?=.*[A-Z])(?=.*[10-15])(?=.*[^A-Za-z0-9])(?=.{11,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{11,}))$/.test(password);
+
 }
 function ispmedium(password){
-	return /^((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))$/.test(password);
+	return /^((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,10}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,10}))$/.test(password);
 }
 
