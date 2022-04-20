@@ -13,7 +13,7 @@ const password2 = document.getElementById('password2');
 // });
 
 function checkInputs() {
-	// trim to remove the whitespaces
+	
 	const usernameValue = username.value.trim();
 	const emailValue = email.value.trim();
 	const phonenumberValue = phonenumber.value.trim();
